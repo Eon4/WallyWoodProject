@@ -1,10 +1,16 @@
 // import style from '../styles/header.module.scss'
+import { Navigation } from '../Components/Navigation'
 
 export function Posters(){
     return (
-        <header>
-            <h1> This is the poser page</h1>
+        <div>
+        <Navigation /> {/* Include the Navigation component */}
+       
+                           
+          <h1> This is the poster page</h1>
 
-        </header>
+
+        </div>
+
     )
 }

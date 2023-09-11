@@ -1,7 +1,6 @@
 
 import { Navigation } from "../Components/Navigation";
-// import { Header } from "../Components/Header";
-// import { Posters } from "./Posters";
+import { Header } from "../Components/Header";
 
 
 export const MainPage = () => {
@@ -9,8 +8,7 @@ export const MainPage = () => {
     <>
     <h1>Home page</h1>
       <Navigation />
-      {/* <Header /> */}
-      {/* <Posters /> */}
+      <Header />
 
     </>
   );
