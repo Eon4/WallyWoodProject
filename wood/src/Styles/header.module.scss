@@ -1,0 +1,22 @@
+@import "../Styles/globals.scss";
+
+.title {
+    font-family: "Jura", sans-serif;
+    color: $salmon;
+    font-size: 8rem;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+  }
+ 
+
+  .Headerimg {
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 842px;
+    border-top: 10px;
+    border-color: #fdfdfd;
+    border-style: solid;
+  }

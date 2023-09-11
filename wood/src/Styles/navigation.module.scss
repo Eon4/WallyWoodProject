@@ -1,21 +1,17 @@
-.navStyle {
-    width: 100%;
-    // height: 62px;
-    // align-items: center;
-    background-color: rgb(55,55,55); 
-    display: grid;
-    justify-items: end;
+@import "../Styles/globals.scss";
 
-    div {
-        // margin: 16px;
-        // display: grid;
-        // justify-content: end;
-        // align-items: end;
-        // grid-template-columns: repeat(5, 1fr);
-        // width: 25%;
-        a {
-            color: white;
-            margin: 4px;
-        }
-    }
-}
+.navStyle {
+    background-color: #FFFFFF;
+    display: grid;
+    justify-items: start;
+  }
+  .navStyle div {
+    margin: 12px;
+  }
+  .navStyle div a {
+    color: $text;
+    margin: 5px;
+    // border-right: 1px #002BC2 solid;
+    float: left;
+    padding: 0 5px;
+  }/*# sourceMappingURL=navigation.module.css.map */
