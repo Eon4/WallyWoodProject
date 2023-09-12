@@ -15,7 +15,7 @@ export const Navigation = () => {
             <Link to="/Posters">PLAKATER</Link>
             <Link to="/about">OM OS</Link>
             <Link to="/contact">KONTAKT</Link>
-            {/* <Link to="/login">LOGIN</Link> */}
+            <Link to="/login">LOGIN</Link>
             </li>
 
             </ul>
