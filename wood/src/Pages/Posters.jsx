@@ -1,4 +1,5 @@
 // import style from '../styles/posters.module.scss'
+
 import { Navigation } from '../Components/Navigation'
 
 export function Posters(){

@@ -3,20 +3,32 @@
 .title {
     font-family: "Jura", sans-serif;
     color: $salmon;
-    font-size: 8rem;
+    font-size: 50px;
+    top: 0;
+    left: 310px;
+    width: 318px;
+    height: 82px;
     position: absolute;
-    top: 100px;
-    right: 50px;
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
   }
  
 
   .Headerimg {
-    width: 100%;
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 842px;
     border-top: 10px;
     border-color: #fdfdfd;
     border-style: solid;
+    // background-attachment: fixed; 
+    // background-size: 100% 100%;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   top: 116px;
+   // left: 183px;
+   width: 1000px;
+   height: 268px;
   }

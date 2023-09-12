@@ -2,16 +2,23 @@
 
 .navStyle {
     background-color: #FFFFFF;
-    display: grid;
-    justify-items: start;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
   }
-  .navStyle div {
-    margin: 12px;
+
+  li {
+    float: right;
   }
-  .navStyle div a {
-    color: $text;
-    margin: 5px;
-    // border-right: 1px #002BC2 solid;
-    float: left;
-    padding: 0 5px;
-  }/*# sourceMappingURL=navigation.module.css.map */
+  
+  li a {
+    // display: grid;
+    grid-template-columns: 1fr;
+    // text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-items: end;
+
+  }
