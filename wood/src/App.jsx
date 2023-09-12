@@ -8,10 +8,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/Posters" element={<Posters />} />
-        <Route path="/MainPage" index element={<MainPage />} /> {/* Add this route */}
+        <Route path="/MainPage" element={<MainPage />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
+
