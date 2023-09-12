@@ -1,4 +1,4 @@
-// import style from '../styles/posters.module.scss'
+import style from '../styles/posters.module.scss'
 
 import { Navigation } from '../Components/Navigation'
 
@@ -8,7 +8,7 @@ export function Posters(){
         <Navigation /> {/* Include the Navigation component */}
        
                            
-          <h1> This is the poster page</h1>
+          <h1 className={style.h1style}> This is the poster page</h1>
 
 
         </div>
