@@ -1,0 +1,75 @@
+@import "../Styles/globals.scss";
+
+
+.contacttitle{
+    color: $salmon;
+    padding-left: 40px;
+    font-size: 32px;
+    // position: absolute;
+//   top: 90px;
+//   left: 260px;
+//   margin: auto;
+//   padding-top: 20px;
+}
+
+.hookTitle{
+    color: rgb(94, 107, 205);
+}
+.formStyle {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin: 0;
+    max-width: 400px;
+    padding-left: 41px;
+    padding-bottom: 10px;
+
+    span{
+        color: rgb(255, 38, 0);
+        font-weight: bold;
+    }
+
+    h3{
+        color: $salmon;
+        font-size: 14px;
+    }
+
+    label {
+
+        color: $salmon;
+        font-size: 14px;
+        font-weight: bold;
+
+
+        input {
+            color: rgb(0, 0, 0);
+            background-color: #FFFFFF;
+            top: 204px;
+left: 184px;
+width: 407px;
+height: 38px;
+border-radius: 5px;
+
+
+        }
+    }
+
+    textarea {
+        resize: none;
+        background-color: #FFFFFF;
+        top: 339px;
+left: 183px;
+width: 407px;
+height: 188px;
+border-radius: 5px;
+      
+      }
+
+      .send{
+        background-color: $Kiss;
+        width: 50px;
+        color: $text;
+        cursor: pointer;
+
+      }
+}

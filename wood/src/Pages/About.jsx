@@ -7,7 +7,7 @@ export function About(){
     return (
         <div>
         <Navigation /> 
-       <section>
+       <section className={style.sectionthing}>
 
                   {/* <div> */}
           <h1 className={style.abouttext}> Om os</h1>
