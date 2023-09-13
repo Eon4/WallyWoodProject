@@ -1,0 +1,50 @@
+@import "../Styles/globals.scss";
+
+.abouttext{
+    color: $salmon;
+    position: absolute;
+  top: 90px;
+  left: 260px;
+    // text-align: left;
+    // top: 50px;
+
+}
+
+// .div{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+
+// }
+.meretext{
+    color: $text;
+    text-align: left;
+    font-size: 14px;
+
+width: 614px;
+height: 399px;
+padding-left: 40px;
+
+}
+
+.star{
+    width: 40%;
+    filter:sepia(80%);
+    padding-bottom: 60px;
+    padding-right: 40px;
+
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+
+}
+
+section{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 5px;
+    // justify-content: center
+    background-color: #f9f9f9f9;
+    padding-bottom: 40px;
+
+}
+

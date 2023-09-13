@@ -10,8 +10,7 @@ export function Posters(){
         <Navigation /> 
       
                            
-          <h1 className={style.h1style}> This is the poster page</h1>
-
+          <h1 className={style.postertext}> This is the poster page</h1>
 
         </div>
 
