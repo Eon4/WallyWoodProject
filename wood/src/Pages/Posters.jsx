@@ -7,7 +7,7 @@ export function Posters(){
     return (
         <div>
 
-        <Navigation /> {/* Include the Navigation component */}
+        <Navigation /> 
       
                            
           <h1 className={style.h1style}> This is the poster page</h1>
