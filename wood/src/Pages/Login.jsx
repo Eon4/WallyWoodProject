@@ -1,4 +1,4 @@
-import style from '../styles/posters.module.scss'
+import style from '../styles/login.module.scss'
 
 import { Navigation } from '../Components/Navigation'
 
@@ -8,7 +8,7 @@ export function Login(){
         <Navigation /> 
        
                            
-          <h1 className={style.h1style}> This is the Login page</h1>
+          <h1 className={style.loginhere}> This is the Login page</h1>
 
 
         </div>
