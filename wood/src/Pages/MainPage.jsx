@@ -5,10 +5,12 @@ import { Footer } from "../Components/Footer";
 import { Fetching } from "../Components/Fetching";
 
 
+
 export const MainPage = () => {
   return (
     <>
       <Navigation />
+
       <Header />
       <h2 className={style.newstitle}>Sidste nyt...</h2>
       <Fetching />

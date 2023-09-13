@@ -1,5 +1,21 @@
 @import "../Styles/globals.scss";
 
+
+.title {
+    font-family: "Jura", sans-serif;
+    color: $salmon;
+    font-size: 50px;
+    top: 0;
+    margin-top: 5px;
+    // left: 310px;
+    // width: 318px;
+    // height: 82px;
+    position: absolute;
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+
 .navStyle {
     background-color: #FFFFFF;
     list-style-type:none;
@@ -10,12 +26,18 @@
     border-bottom: 1px #000000 solid;
     margin-inline-start: 4%;
     margin-inline-end: 4%;
+    // position: fixed;
+    // width: 65%;
+
+   
 
 
   }
 
   li {
     float: right;
+    text-decoration: none;
+
   }
   
   li a {
@@ -29,3 +51,14 @@
 
 
   }
+
+  .cart{
+    font-size: 2rem;
+    color: $salmon;
+    float: right;
+    margin: 5px;
+    :hover{
+      color: $Gray;
+      cursor: pointer;
+    }
+}
