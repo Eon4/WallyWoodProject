@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import style from '../styles/fetching.module.scss'
+import { OnClickButton } from "../Components/OnClickButton";
+import { Link } from 'react-router-dom'
+
+
  
 export function Fetching() {
   const [ posters, setPosters ] = useState([])
@@ -10,7 +14,7 @@ export function Fetching() {
       fetch(url).then(res => res.json()).then(data => setPosters(data))
       
   },[])
-  // posters.slice(0,1) 
+  posters.slice(0,1) 
 
   console.log("There is a poster here",posters);
 
@@ -24,7 +28,8 @@ export function Fetching() {
                               <img className = {style.images} src={item.image} alt="" />
                               <figcaption>
                                   <h3 className = {style.postertitle}>{item.name}</h3>
-                                  {/* <OnClickButton clickEvent={() => alert('Du har klikket')} text={"Læs mere"}/> */}
+                                    <p>{item.genres[0].title}</p>
+                                    <OnClickButton><Link style={{textDecoration: "none", color:"#524641"}} to={`/details/${item.slug}`} >Læs mere</Link></OnClickButton>                                
                               </figcaption>
                           </figure>
                       )

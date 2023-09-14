@@ -6,6 +6,8 @@ import { Posters } from './Pages/Posters';
 import { About } from './Pages/About';
 import { Contact } from './Pages/contact';
 import { Login } from './Pages/Login';
+import { Details } from "./Pages/Details";
+
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 
@@ -14,6 +16,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/Posters" element={<Posters />} />
+        <Route path="/details/:slug" element={<Details/>}/>
         <Route path="/MainPage" element={<MainPage />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
