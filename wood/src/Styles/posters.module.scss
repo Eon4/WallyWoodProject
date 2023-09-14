@@ -6,6 +6,7 @@
 
 .headline{
     color:$salmon;
+    font-size: 32px;
 }
 
 .plakater{
@@ -13,39 +14,70 @@
     margin: auto;
     div{
         display: grid;
-        grid-template-columns: 20% 1fr;
+        grid-template-columns: 15% 1fr;
         gap: 1em;
+        // text-align: left;
+        // margin-right: 30px;
+        
         .aside{
             width: 100%;
             h3, h4, h5, a, p {
                 color: $salmon;
+                font-size: 14px;
+
             }
-            h3, h4{
-                font-family: var(--header134);
-            }
+         
             h3{
-                font-size: 30px;
+                font-size: 20px;
+                color: $text;
+
             }
             h4{
-                font-size: 20px;
+                font-size: 14px;
+                color: $text;
+
+            }
+
+            .pricearea{
+                color: rgb(106, 230, 17);
+                // display: block;
+                float: left;
             }
             ul{
                 margin-bottom: 1em;
-                li{
+
+                li{ 
+                    // margin-left: 1px;
                     list-style: none;
+                    // background-color: pink;
+                    float: left;
+                    // text-align: left;
+                    
+                
+                      
+                 
+
                     a{
                         font-family: var(--header2p);
+                        // display: flex;
+
                     }
                     a:hover{
                         text-decoration: underline;
                     }
+
                 }
             }
             div{
-                display: flex;
+                display: block;
+                grid-template-columns: (1fr 1fr);
+
                 input{
+                    margin: 8px;
                     width: 35%;
-                    padding: 5px;
+                    padding: 2px;
+                    background-color: rgb(126, 126, 221);
+                    
                 }
                 p{
                     margin: 0 10px;

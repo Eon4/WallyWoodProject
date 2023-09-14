@@ -32,6 +32,7 @@ export function Posters(){
   return(
     <>
             <Navigation /> 
+            {/* <AsideGenres/> */}
 
       <section className={style.plakater}>
           <h1  className={style.headline}>Plakater</h1>
@@ -53,7 +54,7 @@ export function Posters(){
                       }
                   </ul>
               }
-              <h4>Pris:</h4>
+              <h4 className={style.pricearea}>Prisområde</h4>
               <div>
                   <input type="number" placeholder="0" />
                   <p> - </p>
