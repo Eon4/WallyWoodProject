@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
 import { Link, useParams } from 'react-router-dom'
 import style from '../styles/details.module.scss'
-
 import { OnClickButton } from "../Components/OnClickButton";
+import { Footer } from "../Components/Footer";
+
 
 export function Details() {
 
@@ -20,6 +21,8 @@ export function Details() {
 
 
     return(
+        <>
+        
         <section className={style.details}>
             {
             details &&
@@ -43,5 +46,7 @@ export function Details() {
                 <OnClickButton><Link style={{textDecoration: "none", color:"#524641"}} to="/mainpage" >Tilbage</Link></OnClickButton>                                
             </div>
         </section>
+              <Footer />
+              </>
     )
 }

@@ -3,3 +3,68 @@
 .postertext{
     color: rgb(216, 34, 10);
 }
+
+.headline{
+    color:$salmon;
+}
+
+.plakater{
+    max-width: 1000px;
+    margin: auto;
+    div{
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        gap: 1em;
+        .aside{
+            width: 100%;
+            h3, h4, h5, a, p {
+                color: $salmon;
+            }
+            h3, h4{
+                font-family: var(--header134);
+            }
+            h3{
+                font-size: 30px;
+            }
+            h4{
+                font-size: 20px;
+            }
+            ul{
+                margin-bottom: 1em;
+                li{
+                    list-style: none;
+                    a{
+                        font-family: var(--header2p);
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            div{
+                display: flex;
+                input{
+                    width: 35%;
+                    padding: 5px;
+                }
+                p{
+                    margin: 0 10px;
+                }
+            }
+        }
+        figure{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+            img{
+                width: 100%;
+            }
+            a, h5{
+                // font-family: var(--header134);
+                color: green;
+                text-align: center;
+            }
+
+        }
+    }
+}
