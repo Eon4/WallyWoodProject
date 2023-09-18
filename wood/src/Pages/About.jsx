@@ -1,6 +1,8 @@
 import style from '../styles/about.module.scss'
 import { Navigation } from '../Components/Navigation'
 import Star from '../assets/images/starwood.jpg';
+import { Footer } from "../Components/Footer";
+
 
 
 export function About(){
@@ -49,6 +51,7 @@ export function About(){
 
                    <img className={style.star} src={Star} alt="star img" />
                    </section>
+                   <Footer />
 
 
         </div>

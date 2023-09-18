@@ -1,6 +1,8 @@
 import style from '../styles/contact.module.scss'
 import { Navigation } from '../Components/Navigation'
 import { useForm } from "react-hook-form";
+import { Footer } from "../Components/Footer";
+
 
 
 export function Contact(){
@@ -52,6 +54,7 @@ export function Contact(){
         <input className={style.send} type="submit" value={"Send"}></input>
 
       </form>
+      <Footer />
 
         </div>
 

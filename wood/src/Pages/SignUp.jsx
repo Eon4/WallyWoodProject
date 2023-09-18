@@ -1,5 +1,20 @@
 import { useForm } from "react-hook-form";
 import style from '../styles/signup.module.scss'
+import styled from 'styled-components';
+import { Navigation } from '../Components/Navigation'
+
+
+const SubmitButton = styled.input`
+background-color: #D1B3A7;
+color: #524641;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+font-weight: bold;
+width: 150px; 
+
+`;
 
 
 export const SignUp = () => {
@@ -34,6 +49,10 @@ export const SignUp = () => {
 
   };
   return (
+    <>
+          <Navigation />
+
+    
     <form className = {style.signupStyle} onSubmit={handleSubmit(onSubmit)}>
       <label>
         Fornavn:
@@ -55,7 +74,9 @@ export const SignUp = () => {
         <input type="password" {...register("password", { required: true })} />
         {errors.password && <span>Feltet skal udfyldes</span>}
       </label>
-      <input type="submit" value="Submit" />
+      <SubmitButton type="submit" value="Submit" />
     </form>
+
+</>
   );
 };

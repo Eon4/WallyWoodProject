@@ -3,6 +3,7 @@ import { useState } from "react";
 import { LoginPage } from "../Pages/LoginPage";
 import { SignUp } from "../Pages/SignUp";
 
+
 export const Login = () => {
   const [isLoginTrue, setIsLoginTrue] = useState(true);
 
@@ -10,7 +11,7 @@ export const Login = () => {
     return (
       <>
         <LoginPage />
-        <button onClick={() => setIsLoginTrue(false)}>Ny bruger?</button>
+        <button className = {style.NewButton} onClick={() => setIsLoginTrue(false)}>Ny bruger?</button>
       </>
     );
   else
@@ -18,7 +19,7 @@ export const Login = () => {
       <>
         <SignUp />
         
-        <button onClick={() => setIsLoginTrue(true)}>Allerede bruger?</button>
+        <button className = {style.NewButton} onClick={() => setIsLoginTrue(true)}>Allerede bruger?</button>
       </>
     );
 };

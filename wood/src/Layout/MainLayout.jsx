@@ -1,12 +1,13 @@
+import { Outlet } from "react-router-dom";
+import { Navigation } from '../Components/Navigation'
+import { Footer } from "../Components/Footer";
 
-// import { Link } from 'react-router-dom';
-// import { Navigation } from "../Components/Navigation";
-
-// export const MainLayout = () => {
-//     return (
-//         <>
-//       <Navigation/>
-
-//         </>
-//     )
-// }
+export const MainLayout = () => {
+    return(
+        <main>
+            <Navigation/>
+            <Outlet/>
+            <Footer/>
+        </main>
+    )
+}

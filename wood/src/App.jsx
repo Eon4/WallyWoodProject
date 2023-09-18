@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { MainLayout } from './Layout/MainLayout';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { MainPage } from './Pages/MainPage';
 import { Posters } from './Pages/Posters';
@@ -15,6 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+      <Route path="/" element={<MainLayout />}/>
         <Route path="/Posters" element={<Posters />} />
         <Route path="/details/:slug" element={<Details/>}/>
         <Route path="/MainPage" element={<MainPage />} />
