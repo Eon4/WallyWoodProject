@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom'
 import style from '../styles/details.module.scss'
 import { OnClickButton } from "../Components/OnClickButton";
 import { Footer } from "../Components/Footer";
+import { Navigation } from '../Components/Navigation'
+
 
 
 export function Details() {
@@ -22,7 +24,8 @@ export function Details() {
 
     return(
         <>
-        
+                    <Navigation /> 
+
         <section className={style.details}>
             {
             details &&

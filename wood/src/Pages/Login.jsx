@@ -14,6 +14,8 @@ export const Login = () => {
       <>
         <LoginPage />
         <button className = {style.NewButton} onClick={() => setIsLoginTrue(false)}>Ny bruger?</button>
+        <Footer/>
+
       </>
     );
   else
