@@ -2,6 +2,8 @@ import style from '../styles/login.module.scss'
 import { useState } from "react";
 import { LoginPage } from "../Pages/LoginPage";
 import { SignUp } from "../Pages/SignUp";
+import { Footer } from "../Components/Footer";
+
 
 
 export const Login = () => {
@@ -20,6 +22,7 @@ export const Login = () => {
         <SignUp />
         
         <button className = {style.NewButton} onClick={() => setIsLoginTrue(true)}>Allerede bruger?</button>
+      <Footer/>
       </>
     );
 };

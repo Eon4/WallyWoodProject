@@ -11,7 +11,7 @@ export function Posters(){
   const [poster, setPoster] = useState([])
   const [genres, setGenres] = useState([])
   const [slug, setSlug ] = useState("drama")
-  
+
 
   useEffect(() => {
       //Fetcher liste af plakater under en genre
