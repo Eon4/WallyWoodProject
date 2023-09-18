@@ -1,17 +1,28 @@
 import style from '../styles/login.module.scss'
+import { useState } from "react";
+import { LoginPage } from "../Pages/LoginPage";
+import { SignUp } from "../Pages/SignUp";
 
-import { Navigation } from '../Components/Navigation'
+export const Login = () => {
+  const [isLoginTrue, setIsLoginTrue] = useState(true);
 
-export function Login(){
+  if (isLoginTrue)
     return (
-        <div>
-        <Navigation /> 
-       
-                           
-          <h1 className={style.loginhere}> This is the Login page</h1>
+      <>
+        <LoginPage />
+        <button onClick={() => setIsLoginTrue(false)}>Ny bruger?</button>
+      </>
+    );
+  else
+    return (
+      <>
+        <SignUp />
+        
+        <button onClick={() => setIsLoginTrue(true)}>Allerede bruger?</button>
+      </>
+    );
+};
 
 
-        </div>
 
-    )
-}
+
