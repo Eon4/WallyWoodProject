@@ -39,7 +39,7 @@
             }
 
             .pricearea{
-                color: rgb(106, 230, 17);
+                color: $text;
                 // display: block;
                 float: left;
             }
@@ -72,7 +72,8 @@
                     margin: 8px;
                     width: 35%;
                     padding: 2px;
-                    background-color: rgb(126, 126, 221);
+                    background-color: white;
+                    color: black;
                     
                 }
                 p{
@@ -89,7 +90,7 @@
             }
             a, h5{
                 // font-family: var(--header134);
-                color: green;
+                color: $text;
                 text-align: center;
             }
 

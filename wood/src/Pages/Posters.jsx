@@ -7,9 +7,6 @@ import { OnClickButton } from "../Components/OnClickButton";
 import { Link, useParams } from 'react-router-dom'
 
 
-
-
-
 export function Posters(){
   const [poster, setPoster] = useState([])
   const [genres, setGenres] = useState([])
@@ -18,7 +15,7 @@ export function Posters(){
 
   useEffect(() => {
       //Fetcher liste af plakater under en genre
-      const url = `http://localhost:4000/poster/list/${slug}?limit=30`
+      const url = `http://localhost:4000/poster/list/${slug}?limit=15`
       fetch(url).then(res => res.json()).then(data => setPoster(data))
       //Fetcher genres
       const urlGenres = "http://localhost:4000/genre"

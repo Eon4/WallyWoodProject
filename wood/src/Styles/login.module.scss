@@ -12,6 +12,7 @@
     max-width: 400px;
     padding-left: 41px;
     padding-bottom: 190px;
+    padding-top: 40px;
 
     // padding-top: 180px;
 
@@ -70,8 +71,9 @@ border-radius: 5px;
 
   
   .NewButton {
-    background-color: red;
-    color: pink;
+    background-color: $text;
+    color: $snow;
+    margin: 5px;
 
   }
   

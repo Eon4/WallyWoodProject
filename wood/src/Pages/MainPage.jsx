@@ -10,7 +10,6 @@ export const MainPage = () => {
   return (
     <>
       <Navigation />
-
       <Header />
       <h2 className={style.newstitle}>Sidste nyt...</h2>
       <Fetching />
