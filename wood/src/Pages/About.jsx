@@ -1,6 +1,6 @@
 import style from '../styles/about.module.scss'
 import { Navigation } from '../Components/Navigation'
-import Star from '../assets/images/starwood.jpg';
+import Star from '../assets/images/starwood01.png';
 import { Footer } from "../Components/Footer";
 
 
