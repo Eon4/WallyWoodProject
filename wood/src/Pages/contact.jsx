@@ -2,6 +2,8 @@ import style from '../styles/contact.module.scss'
 import { Navigation } from '../Components/Navigation'
 import { useForm } from "react-hook-form";
 import { Footer } from "../Components/Footer";
+import { Toast } from "../Components/Toast";
+
 
 
 
@@ -16,6 +18,11 @@ export function Contact(){
 
   const onSubmit = (data) => console.log(data);
 
+  const handleReset = () => {
+    reset(); 
+  };
+  
+
   
     return (
         <div>
@@ -29,7 +36,6 @@ export function Contact(){
           Dit navn:
           <input
             {...register("fullName", { required: true, maxLength: 15 })}
-            // placeholder="Enter your fullname here"
           ></input>
         </label>
         {errors.fullName && <span>Vær venlig at udfylde dette felt.</span>}
@@ -39,7 +45,6 @@ export function Contact(){
           Din email:
           <input
             {...register("emailRequired", { required: true })}
-            // placeholder="Enter your email here"
           ></input>
         </label>
         {errors.emailRequired && <span>Venligst udfyld dette felt.</span>}
@@ -51,7 +56,8 @@ export function Contact(){
           name="comment"
         ></textarea>
 
-        <input className={style.send} type="submit" value={"Send"}></input>
+        {/* <input className={style.send} type="submit" value={"Send"}></input> */}
+        <Toast onReset={handleReset} />
 
       </form>
       <Footer />

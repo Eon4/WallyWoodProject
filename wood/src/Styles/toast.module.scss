@@ -1,0 +1,50 @@
+@import "../Styles/globals.scss";
+
+.title {
+    color: rgb(199, 155, 53);
+}
+
+.toast-container {
+    position: fixed;
+    top: 60px; 
+    left: 50%; 
+    text-align: center;
+    transform: translateX(-50%);
+    width: 300px; 
+    background-color: $salmon;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    border-color: rgb(170, 135, 28);
+    border-style: outset;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .show-toast {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button-container {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #cdd00c;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: $salmon;
+    ;
+  }
+  
