@@ -11,9 +11,7 @@ export function About(){
         <Navigation /> 
        <section className={style.sectionthing}>
 
-                  {/* <div> */}
           <h1 className={style.abouttext}> Om os</h1>
-          {/* </div>          */}
 
           <p className={style.meretext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Sed scelerisque ac ipsum sed faucibus. Vivamus mollis 

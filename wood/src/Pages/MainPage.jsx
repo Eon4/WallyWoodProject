@@ -4,8 +4,6 @@ import { Header } from "../Components/Header";
 import { Footer } from "../Components/Footer";
 import { Fetching } from "../Components/Fetching";
 
-
-
 export const MainPage = () => {
   return (
     <>

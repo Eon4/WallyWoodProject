@@ -16,7 +16,6 @@ width: 150px;
 
 `;
 
-
 export const SignUp = () => {
   const {
     register,
@@ -26,10 +25,9 @@ export const SignUp = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    // url to post 
+
     const url = "http://localhost:4000/users"
 
-    // url encoded body object containing our data
     const body = new URLSearchParams()
     body.append('firstname', data.firstname)
     body.append('lastname', data.lastname)
@@ -76,7 +74,6 @@ export const SignUp = () => {
       </label>
       <SubmitButton type="submit" value="Submit" />
     </form>
-
 </>
   );
 };

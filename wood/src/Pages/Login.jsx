@@ -4,8 +4,6 @@ import { LoginPage } from "../Pages/LoginPage";
 import { SignUp } from "../Pages/SignUp";
 import { Footer } from "../Components/Footer";
 
-
-
 export const Login = () => {
   const [isLoginTrue, setIsLoginTrue] = useState(true);
 
@@ -15,14 +13,12 @@ export const Login = () => {
         <LoginPage />
         <button className = {style.NewButton} onClick={() => setIsLoginTrue(false)}>Ny bruger?</button>
         <Footer/>
-
       </>
     );
   else
     return (
       <>
         <SignUp />
-        
         <button className = {style.NewButton} onClick={() => setIsLoginTrue(true)}>Allerede bruger?</button>
       <Footer/>
       </>

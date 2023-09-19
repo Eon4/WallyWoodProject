@@ -4,11 +4,7 @@ import { useForm } from "react-hook-form";
 import { Footer } from "../Components/Footer";
 import { Toast } from "../Components/Toast";
 
-
-
-
 export function Contact(){
-
 
   const {
     register,
@@ -22,13 +18,10 @@ export function Contact(){
     reset(); 
   };
   
-
-  
     return (
         <div>
         <Navigation /> 
-       
-                           
+                      
           <h1 className={style.contacttitle}>Kontakt os</h1>
 
           <form className={style.formStyle} onSubmit={handleSubmit(onSubmit)}>
@@ -61,10 +54,6 @@ export function Contact(){
 
       </form>
       <Footer />
-
         </div>
-
-        
-
     )
 }

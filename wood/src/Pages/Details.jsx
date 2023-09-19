@@ -5,8 +5,6 @@ import { OnClickButton } from "../Components/OnClickButton";
 import { Footer } from "../Components/Footer";
 import { Navigation } from '../Components/Navigation'
 
-
-
 export function Details() {
 
     const [details, setDetails] = useState([])
@@ -20,11 +18,9 @@ export function Details() {
     },[])
     let description = details.description
     
-
-
     return(
         <>
-                    <Navigation /> 
+         <Navigation /> 
 
         <section className={style.details}>
             {

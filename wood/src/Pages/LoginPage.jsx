@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import { LoginContext } from "../Components/loginContext";
 import { Navigation } from '../Components/Navigation'
 
-
 const SubmitButton = styled.input`
 background-color: #D1B3A7;
 color: #524641;
@@ -36,7 +35,6 @@ export function LoginPage(){
     body.append("username", data.username);
     body.append("password", data.password);
  
-
     const options = {
       metode: "POST",
       body: body,
@@ -62,7 +60,6 @@ export function LoginPage(){
         </label>
         <SubmitButton type="submit" value="Submit" />
       </form>
-
     </div>
   )
 }

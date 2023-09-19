@@ -6,12 +6,10 @@ import { Footer } from "../Components/Footer";
 import { OnClickButton } from "../Components/OnClickButton";
 import { Link, useParams } from 'react-router-dom'
 
-
 export function Posters(){
   const [poster, setPoster] = useState([])
   const [genres, setGenres] = useState([])
   const [slug, setSlug ] = useState("drama")
-
 
   useEffect(() => {
       //Fetcher liste af plakater under en genre
@@ -74,9 +72,7 @@ export function Posters(){
               </figure>
           </div>
       </section>
-
       <Footer/>
       </>
-
   )    
 }
