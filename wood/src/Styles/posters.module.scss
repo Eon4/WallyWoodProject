@@ -24,38 +24,31 @@
             h3, h4, h5, a, p {
                 color: $salmon;
                 font-size: 14px;
-
             }
          
             h3{
                 font-size: 20px;
                 color: $text;
-
             }
             h4{
                 font-size: 14px;
                 color: $text;
-
             }
 
             .pricearea{
                 color: $text;
-                // display: block;
                 float: left;
             }
             ul{
                 margin-bottom: 1em;
 
                 li{ 
-                    // margin-left: 1px;
                     list-style: none;
-                    // background-color: pink;
                     float: left;
                     // text-align: left;
 
                     a{
                         font-family: var(--header2p);
-                        // display: flex;
 
                     }
                     a:hover{
@@ -89,7 +82,6 @@
                 width: 100%;
             }
             a, h5{
-                // font-family: var(--header134);
                 color: $text;
                 text-align: center;
             }

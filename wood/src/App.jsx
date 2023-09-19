@@ -9,10 +9,7 @@ import { About } from './Pages/About';
 import { Contact } from './Pages/contact';
 import { Login } from './Pages/Login';
 import { Details } from "./Pages/Details";
-
-
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
 
 function App() {
   return (

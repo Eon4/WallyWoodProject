@@ -9,10 +9,6 @@ footer {
     border-top: $salmon;
     border-radius: 3px;
     border-style:ridge;
-    // position:relative;
-
-   
-
 
     p {
         font-size: 14px;
@@ -37,14 +33,10 @@ footer {
         transition: 0.5s ease;
         cursor: pointer;
     }
- 
-    
 }
-
 .autoFlow {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     align-items: center;
     gap: 8px;
-
 }

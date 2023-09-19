@@ -1,21 +1,12 @@
 @import "../Styles/globals.scss";
 
-
 // .Fetching{
 //     max-width: 1000px;
-//     margin: auto;
-//     padding: 1rem 0;
     .images{
         margin-top: auto;
         width: 100%;
         border-radius: 5px;
     }
-
-    // h2{
-    //     margin: 1.5rem 0;
-    //     font-family: var(--header2p);
-    //     color: var(--terraCotta);
-    // }
 
     .postertitle {
         color: $text;
@@ -26,9 +17,6 @@
         align-items: center;
       }
       
- 
-      
-
     .posterthiny{
         margin: auto;
         // position:absolute;
@@ -42,8 +30,5 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
-     
-        }
-       
-        
+        }     
     }

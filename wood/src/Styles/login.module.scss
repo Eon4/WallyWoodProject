@@ -14,8 +14,6 @@
     padding-bottom: 190px;
     padding-top: 40px;
 
-    // padding-top: 180px;
-
     span{
         color: rgb(255, 38, 0);
         font-weight: bold;
@@ -37,24 +35,21 @@
             color: rgb(0, 0, 0);
             background-color: #FFFFFF;
             top: 204px;
-left: 184px;
-width: 407px;
-height: 38px;
-border-radius: 5px;
-
-
+            left: 184px;
+            width: 407px;
+            height: 38px;
+            border-radius: 5px;
         }
     }
-
     textarea {
         color: black;
         resize: none;
         background-color: #FFFFFF;
         top: 339px;
-left: 183px;
-width: 407px;
-height: 188px;
-border-radius: 5px;
+        left: 183px;
+        width: 407px;
+        height: 188px;
+        border-radius: 5px;
       
       }
 
@@ -68,12 +63,9 @@ border-radius: 5px;
   
 }
 
-
-  
   .NewButton {
     background-color: $text;
     color: $snow;
     margin: 5px;
-
   }
   
